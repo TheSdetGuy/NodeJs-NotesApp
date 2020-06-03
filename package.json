@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/deba19/NodeJs-NotesApp#readme",
   "dependencies": {
-    "validator": "^13.0.0"
+    "validator": "^13.0.0",
+    "yargs": "^15.3.1"
   }
 }
