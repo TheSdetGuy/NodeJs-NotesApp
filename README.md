@@ -11,8 +11,12 @@
 ## Commands to run the program
     1. To Add New Notes
         node app.js add --title="Your Note Title" --body="Your note body"
+    
     2. To Remove a note
         node app.js remove --title="Note title you want to remove"
+
     3. To List all the notes
         node app.js list
-    
+
+    4. To search/read any note
+        node app.js read --title="note title"
