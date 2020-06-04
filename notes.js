@@ -5,6 +5,7 @@ const getNotes = ()=>
 {
     return 'Your notes...'
 }
+//Adding new notes
 const addNote= (title, body)=>
 {
     const notes=loadNotes()
@@ -45,7 +46,16 @@ const removeNote =(title) =>
     console.log(chalk.red.inverse("No note found with the title!"))
   
 }
-
+//Listing all notes
+const listNotes = () =>
+{
+    const notes=loadNotes()
+    console.log(chalk.inverse('Your Notes'));
+    notes.forEach(note => {
+        console.log(chalk.green.inverse(note.title))
+        console.log(note.body)
+    });
+}
 const saveNotes = function(notes)
 {
     const dataJSON=JSON.stringify(notes)
@@ -70,4 +80,5 @@ module.exports ={
     getNotes:getNotes,
     addNote:addNote,
     removeNote:removeNote,
+    listNotes:listNotes,
 }
